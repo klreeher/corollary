@@ -28,6 +28,6 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/dictionary/Dockerfile'
-        buildContext: 'dictionary'
+        buildContext: '$(Build.Repository.LocalPath)/dictionary/'
         tags: |
           $(tag)
